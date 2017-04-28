@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvVarInjectorHttpModule", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvVarInjectorHttpModule.Tests.Unit", "EnvVarInjectorHttpModule.Tests.Unit\EnvVarInjectorHttpModule.Tests.Unit.csproj", "{2E2A2357-5234-4867-9797-0B10F901C008}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvVarInjectorHttpModule.TestHarness", "EnvVarInjectorHttpModule.TestHarness\EnvVarInjectorHttpModule.TestHarness.csproj", "{2A19B4D5-9414-4C64-8DEB-FF053431A54A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2E2A2357-5234-4867-9797-0B10F901C008}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E2A2357-5234-4867-9797-0B10F901C008}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E2A2357-5234-4867-9797-0B10F901C008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A19B4D5-9414-4C64-8DEB-FF053431A54A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A19B4D5-9414-4C64-8DEB-FF053431A54A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A19B4D5-9414-4C64-8DEB-FF053431A54A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A19B4D5-9414-4C64-8DEB-FF053431A54A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,16 +15,42 @@ namespace EnvVarInjectorHttpModule
                 .Where(x => x.Key.StartsWith(interestingEnvVarPrefix))
                 .ToList();
 
-            var javaScript = "process={env:{}};";
-
-            interestingEnvVars.ForEach(x =>
+            if (interestingEnvVars.Any())
             {
-                var interestingEnvVarWithoutPrefix = x.Key.Replace(interestingEnvVarPrefix, string.Empty);
-                var assignmentStatement = $"{@namespace}.{interestingEnvVarWithoutPrefix}=\"{x.Value}\";";
-                javaScript += assignmentStatement;
-            });
+                var javaScript = GetNamespaceObjectDeclaration(@namespace);
 
-            return javaScript;
+                interestingEnvVars.ForEach(x =>
+                {
+                    var interestingEnvVarWithoutPrefix = x.Key.Replace(interestingEnvVarPrefix, string.Empty);
+                    var assignmentStatement = $"{@namespace}.{interestingEnvVarWithoutPrefix}=\"{x.Value}\";";
+                    javaScript += assignmentStatement;
+                });
+
+                return javaScript;
+            }
+
+            return string.Empty;
+        }
+
+        private static string GetNamespaceObjectDeclaration(string @namespace)
+        {
+            const string prefix = "={";
+            const string suffix = "};";
+            var namespaceParts = @namespace.Split('.');
+
+            if (namespaceParts.Length == 1)
+            {
+                return namespaceParts.First() + prefix + suffix;
+            }
+
+            var middlePart = string.Empty;
+
+            foreach (var nameSpacePart in namespaceParts.Skip(1).Reverse())
+            {
+                middlePart = nameSpacePart + ":{" + middlePart + "}";
+            }
+
+            return namespaceParts.First() + prefix + middlePart + suffix;
         }
 
         public static bool MatchesSearchRegex(Uri uri, string searchRegex)

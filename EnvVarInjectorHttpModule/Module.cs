@@ -1,22 +1,25 @@
 ﻿using System;
+using System.Configuration;
 using System.Web;
-using System.Web.Configuration;
+using EnvVarInjectorHttpModule.Configuration;
 
 namespace EnvVarInjectorHttpModule
 {
     public class Module : IHttpModule
     {
-        private static string _namespace = "process.env";
-        private static string _interestingEnvVarPrefix = "__";
         private string _javaScript;
         private static string _searchRegex = @"main.*\.min\.js";
 
         public void Init(HttpApplication context)
         {
+            var config = (EnvVarInjectorHttpModuleSettings)ConfigurationManager.GetSection(typeof(EnvVarInjectorHttpModuleSettings).Name);
+
             _javaScript = ModuleUtilities.GetJavaScript(
                 Environment.GetEnvironmentVariables(),
-                _interestingEnvVarPrefix,
-                _namespace);
+                config.InterestingEnvVarPrefix,
+                config.Namespace);
+
+            _searchRegex = config.SearchRegex;
 
             context.BeginRequest += Context_BeginRequest;
         }
