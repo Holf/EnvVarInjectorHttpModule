@@ -1,0 +1,15 @@
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\EnvVarInjectorHttpModule.Tests.Unit.dll
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\EnvVarInjectorHttpModule.Tests.Unit.pdb
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\EnvVarInjectorHttpModule.dll
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\FluentAssertions.Core.dll
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\FluentAssertions.dll
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\nunit.framework.dll
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\EnvVarInjectorHttpModule.pdb
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\FluentAssertions.pdb
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\FluentAssertions.xml
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\FluentAssertions.Core.pdb
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\FluentAssertions.Core.xml
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\bin\Debug\nunit.framework.xml
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\obj\Debug\EnvVarInjectorHttpModule.Tests.Unit.csprojResolveAssemblyReference.cache
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\obj\Debug\EnvVarInjectorHttpModule.Tests.Unit.dll
+F:\code\Mine\EnvVarInjectorHttpModule\EnvVarInjectorHttpModule.Tests.Unit\obj\Debug\EnvVarInjectorHttpModule.Tests.Unit.pdb
