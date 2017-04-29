@@ -31,5 +31,5 @@ Clone this Repo and have a look at the Test Harness there within to see how it w
 
 (I could create a NuGet package that does this, I suppose, maybe I'll get round to that...)
 
-And that's it! A genuinely two minute solution to all your Server-side to Browser Environment Variable needs.
+And that's it! A genuinely two minute solution for all your Server-side to Browser Environment Variable needs.
 
