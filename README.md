@@ -1,5 +1,5 @@
 # EnvVarInjectorHttpModule
-## An IIS HttpModule for injecting Server Environment Variables into JavaScript files
+## An IIS HttpModule for injecting Server-side Environment Variables into JavaScript files
 
 ### Why do I need this?
 
