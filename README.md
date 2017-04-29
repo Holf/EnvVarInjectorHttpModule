@@ -3,11 +3,11 @@
 
 ### Why do I need this?
 
-Sometimes, all I want to do is for my Azure WebApp to serve up static resources for my Single Page App, these being a single HTML file and a single JavaScript file. The JavaScript is a React or Angular App I've packaged using WebPack or Browserify.
+Sometimes, all I need is my Azure WebApp to serve up static resources for my Single Page App, these being a single HTML file and a single JavaScript file. The JavaScript is a React or Angular App I've packaged using WebPack or Browserify. The HTML file is a simple shell which loads the JavaScript.
 
 This is all well and good, except I want to be able to pass Environment Variables from the Server to browser clients. For example, in my Test Environment I might want my App to use a Test API. And in my Live Environment I want my App to use a Live API.
 
-I have my 'API_URL' Environment Variable set appropriately in my different environments, but how do I pass this to my App Javascript running in the browser?
+I have my 'API_URL' Environment Variable set appropriately in my different environments, but how do I pass this to the Javascript running in the browser?
 
 ### The traditional solution
 
@@ -19,7 +19,7 @@ How about if I use an HTTP Module instead, that reads Environment Variables, and
 
 I don't want to inject all Environment Variables, so I'll need a way of identifying which ones are 'interesting'.
 
-And I want to be able to choose a namespace for my Global Variables on the browser, so I can be sure they don't interfere with any other globals.
+And I want to be able to choose a namespace for my global variables on the browser, so I can be sure they don't interfere with any other globals. (How about I use 'prcoess.env' as a default, which is what your typical React App would use?)
 
 Oh, and I need to be able to target the correct JavaScript file(s).
 
@@ -30,4 +30,6 @@ Clone this Repo and have a look at the Test Harness there within to see how it w
 * A bin Folder which contains the EnvVarInjectorHttpModule.dll file that is output when you build the EnvVarInjectorHttpModule project.
 
 (I could create a NuGet package that does this, I suppose, maybe I'll get round to that...)
+
+And that's it! A genuinely two minute solution to all your Server-side to Browser Environment Variable needs.
 
